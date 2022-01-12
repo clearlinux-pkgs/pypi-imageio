@@ -4,7 +4,7 @@
 #
 Name     : pypi-imageio
 Version  : 2.13.5
-Release  : 40
+Release  : 41
 URL      : https://files.pythonhosted.org/packages/7f/a4/ef9cf84d6988c6c483bf00d890b3d8397facde9bf469004350550162495f/imageio-2.13.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7f/a4/ef9cf84d6988c6c483bf00d890b3d8397facde9bf469004350550162495f/imageio-2.13.5.tar.gz
 Summary  : Library for reading and writing a wide range of image, video, scientific, and volumetric data formats.
@@ -14,11 +14,7 @@ Requires: pypi-imageio-bin = %{version}-%{release}
 Requires: pypi-imageio-license = %{version}-%{release}
 Requires: pypi-imageio-python = %{version}-%{release}
 Requires: pypi-imageio-python3 = %{version}-%{release}
-BuildRequires : Pillow
 BuildRequires : buildreq-distutils3
-Provides: imageio
-Provides: imageio-python
-Provides: imageio-python3
 BuildRequires : pypi(numpy)
 BuildRequires : pypi(pillow)
 
@@ -76,7 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641444469
+export SOURCE_DATE_EPOCH=1642007301
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
