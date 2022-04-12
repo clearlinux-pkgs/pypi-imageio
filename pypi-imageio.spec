@@ -4,7 +4,7 @@
 #
 Name     : pypi-imageio
 Version  : 2.16.2
-Release  : 47
+Release  : 48
 URL      : https://files.pythonhosted.org/packages/3f/fb/b47f698ae49449f2cac592634a716297a5f4ec0038e3ba04a287a52fbd70/imageio-2.16.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/3f/fb/b47f698ae49449f2cac592634a716297a5f4ec0038e3ba04a287a52fbd70/imageio-2.16.2.tar.gz
 Summary  : Library for reading and writing a wide range of image, video, scientific, and volumetric data formats.
@@ -62,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1649689971
+export SOURCE_DATE_EPOCH=1649762392
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
