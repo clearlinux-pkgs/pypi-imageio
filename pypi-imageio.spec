@@ -4,7 +4,7 @@
 #
 Name     : pypi-imageio
 Version  : 2.19.3
-Release  : 56
+Release  : 57
 URL      : https://files.pythonhosted.org/packages/84/4f/c26bb91ad39ed2264518c189832f875acc58d6fcfe4d28e1527500b74894/imageio-2.19.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/84/4f/c26bb91ad39ed2264518c189832f875acc58d6fcfe4d28e1527500b74894/imageio-2.19.3.tar.gz
 Summary  : Library for reading and writing a wide range of image, video, scientific, and volumetric data formats.
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656381761
+export SOURCE_DATE_EPOCH=1656400453
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
