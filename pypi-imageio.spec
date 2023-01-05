@@ -4,7 +4,7 @@
 #
 Name     : pypi-imageio
 Version  : 2.23.0
-Release  : 75
+Release  : 76
 URL      : https://files.pythonhosted.org/packages/bd/a9/c0de6eb463e44440982611334a61ebd430eba9d15987864a51e4a00ffa0a/imageio-2.23.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/bd/a9/c0de6eb463e44440982611334a61ebd430eba9d15987864a51e4a00ffa0a/imageio-2.23.0.tar.gz
 Summary  : Library for reading and writing a wide range of image, video, scientific, and volumetric data formats.
