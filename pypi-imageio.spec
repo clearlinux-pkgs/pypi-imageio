@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-imageio
-Version  : 2.31.0
-Release  : 87
-URL      : https://files.pythonhosted.org/packages/9f/be/017618ada44f20d3c5986b10d763ffe724b169d3f1c57a742e53762c8783/imageio-2.31.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/9f/be/017618ada44f20d3c5986b10d763ffe724b169d3f1c57a742e53762c8783/imageio-2.31.0.tar.gz
+Version  : 2.31.1
+Release  : 88
+URL      : https://files.pythonhosted.org/packages/c7/2e/b64e8fef676c698ef1ab9313767ff7c64e44e3b6fa1986031c1c0bf2f813/imageio-2.31.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/c7/2e/b64e8fef676c698ef1ab9313767ff7c64e44e3b6fa1986031c1c0bf2f813/imageio-2.31.1.tar.gz
 Summary  : Library for reading and writing a wide range of image, video, scientific, and volumetric data formats.
 Group    : Development/Tools
 License  : BSD-2-Clause
@@ -58,10 +58,10 @@ python3 components for the pypi-imageio package.
 
 
 %prep
-%setup -q -n imageio-2.31.0
-cd %{_builddir}/imageio-2.31.0
+%setup -q -n imageio-2.31.1
+cd %{_builddir}/imageio-2.31.1
 pushd ..
-cp -a imageio-2.31.0 buildavx2
+cp -a imageio-2.31.1 buildavx2
 popd
 
 %build
@@ -69,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685978994
+export SOURCE_DATE_EPOCH=1686583227
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
