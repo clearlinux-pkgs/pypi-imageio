@@ -7,7 +7,7 @@
 #
 Name     : pypi-imageio
 Version  : 2.31.6
-Release  : 94
+Release  : 95
 URL      : https://files.pythonhosted.org/packages/ed/98/2c50490140b0cb5bc8cae29fd936bb5908daef25bf62ec7ded8a0f9f2eab/imageio-2.31.6.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ed/98/2c50490140b0cb5bc8cae29fd936bb5908daef25bf62ec7ded8a0f9f2eab/imageio-2.31.6.tar.gz
 Summary  : Library for reading and writing a wide range of image, video, scientific, and volumetric data formats.
@@ -71,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1698070483
+export SOURCE_DATE_EPOCH=1698076075
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -87,6 +87,7 @@ FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
 export MAKEFLAGS=%{?_smp_mflags}
+pypi-dep-fix.py . pillow
 python3 setup.py build
 
 pushd ../buildavx2/
@@ -95,6 +96,7 @@ CXXFLAGS="$CLEAR_INTERMEDIATE_CXXFLAGS -m64 -march=x86-64-v3 -Wl,-z,x86-64-v3 "
 FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -m64 -march=x86-64-v3 -Wl,-z,x86-64-v3 "
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS -m64 -march=x86-64-v3 "
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS -m64 -march=x86-64-v3 "
+pypi-dep-fix.py . pillow
 python3 setup.py build
 
 popd
@@ -116,6 +118,7 @@ LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 python3 -tt setup.py build  install --root=%{buildroot}
+pypi-dep-fix.py %{buildroot} pillow
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
