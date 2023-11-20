@@ -1,5 +1,5 @@
 PKG_NAME := pypi-imageio
-URL = https://files.pythonhosted.org/packages/90/69/9448c0156936b437e3803e185e3d991afd8b5413a90e848cdcc038fc0303/imageio-2.32.0.tar.gz
+URL = https://files.pythonhosted.org/packages/46/17/151ee6e0ab1381d0651bfa1ed3c448009b1dc7dc95cbbfd4bf5c2f033308/imageio-2.33.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
